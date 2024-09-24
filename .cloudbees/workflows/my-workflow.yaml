@@ -2,10 +2,9 @@ apiVersion: automation.cloudbees.io/v1alpha1
 kind: workflow
 name: My workflow
 on:
-  workflow_dispatch:
-    inputs:
-      s1:
-        type: string
+  push:
+    branches:
+      - main
 jobs:
   build:
     steps:
