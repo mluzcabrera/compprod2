@@ -3,27 +3,6 @@ kind: workflow
 name: My workflow
 on:
   workflow_dispatch:
-    inputs:
-      Release_name:
-        type: string
-        required: true
-        description: Release name
-      Release_number:
-        type: number
-        default: 156
-        required: true
-        description: This is the release number
-      Smart_deploy:
-        type: boolean
-        default: true
-      Release_type:
-        type: choice
-        options:
-          - Standard
-          - Hotfix
-        default: Standard
-        required: true
-        description: Type of release
 jobs:
   build:
     steps:
