@@ -7,16 +7,16 @@ on:
       Name:
         type: string
         required: true
-        description: Release name
+        description: Description 1
       Version:
         type: number
         required: true
-        description: Release version number
+        description: Description 2
       Smart_deploy:
         type: boolean
         default: true
         required: true
-        description: Option to do smart deploy
+        description: Description 3
       Release_type:
         type: choice
         options:
@@ -24,7 +24,7 @@ on:
           - Hotfix
         default: Standard
         required: true
-        description: Type of release
+        description: Description 4
 jobs:
   build:
     steps:
