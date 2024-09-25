@@ -12,11 +12,6 @@ on:
         type: number
         required: true
         description: Description 2
-      Smart_deploy:
-        type: boolean
-        default: true
-        required: true
-        description: Description 3
       Release_type:
         type: choice
         options:
@@ -25,6 +20,11 @@ on:
         default: Standard
         required: true
         description: Description 4
+      Smart_deploy:
+        type: boolean
+        default: true
+        required: true
+        description: Description 3
 jobs:
   build:
     steps:
