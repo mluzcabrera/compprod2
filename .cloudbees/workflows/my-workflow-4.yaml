@@ -3,7 +3,7 @@ kind: workflow
 name: My workflow
 on:
   schedule:
-    - cron: 9 11 * * *
+    - cron: 13 9 * * *
 jobs:
   build:
     steps:
