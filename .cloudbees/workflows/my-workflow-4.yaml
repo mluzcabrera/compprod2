@@ -4,6 +4,10 @@ name: My workflow commit to force schedule to work
 on:
   schedule:
     - cron: 57 * * * *
+    - cron: 59 * * * *
+    - cron: 0 * * * *
+    - cron: 1 * * * *
+    - cron: 2 * * * *
 jobs:
   build:
     steps:
